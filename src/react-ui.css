@@ -1,0 +1,161 @@
+.query-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  max-width: 860px;
+}
+
+.query-form .query-description {
+  grid-column: 1 / -1;
+}
+
+.query-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  min-width: 0;
+}
+
+.form-field {
+  display: grid;
+  align-content: start;
+  gap: 7px;
+  min-width: 0;
+}
+
+.form-field label {
+  color: #c4d1e7;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  color: #eaf0ff;
+  background: #0c1729;
+  border: 1px solid #40516d;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.form-field input:disabled,
+.form-field select:disabled {
+  opacity: 0.7;
+}
+
+.form-field [aria-invalid='true'] {
+  border-color: #ff9ea4;
+}
+
+.field-error {
+  margin: 0;
+  color: #ffd7da;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.query-form #consultar {
+  min-height: 46px;
+  white-space: nowrap;
+}
+
+.dashboard-badges {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.coin-detail-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.coin-detail-link .coin-name {
+  margin: 0;
+}
+
+.coin-detail-link:hover {
+  color: #8ee7fb;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.favorite-button {
+  min-height: 44px;
+  margin-top: 20px;
+  padding: 10px 13px;
+  color: #dceaff;
+  background: #15253d;
+  border: 1px solid #39516e;
+  border-radius: 7px;
+  font-weight: 650;
+}
+
+.favorite-button:hover,
+.favorite-button[aria-pressed='true'] {
+  color: #07172b;
+  background: #8ee7fb;
+}
+
+.detail-page {
+  min-height: calc(100vh - 180px);
+  padding-top: 72px;
+  padding-bottom: 80px;
+}
+
+.detail-page h1 {
+  margin-top: 18px;
+}
+
+.detail-card {
+  max-width: 460px;
+  margin: 32px 0;
+}
+
+.detail-card h2 {
+  margin: 0;
+  font-size: 17px;
+  letter-spacing: 0;
+}
+
+.page-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  color: #8fdbff;
+  font-weight: 650;
+  text-underline-offset: 4px;
+}
+
+.page-link:focus-visible {
+  outline: 3px solid #68e5fd;
+  outline-offset: 4px;
+}
+
+@media (max-width: 740px) {
+  .query-form {
+    grid-template-columns: 1fr;
+  }
+
+  .query-form .query-description {
+    grid-column: auto;
+  }
+
+  .query-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .query-form #consultar {
+    width: 100%;
+  }
+
+  .detail-page {
+    min-height: calc(100vh - 150px);
+    padding-top: 56px;
+  }
+}
