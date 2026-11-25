@@ -66,10 +66,11 @@ la suite para validar el cambio.
 `index.html` para rutas directas de React Router. El despliegue fue confirmado
 por la pantalla **Deployed to Production** de Vercel (25/11/2026, ART).
 
-La existencia de una URL publicada **no sustituye** las pruebas funcionales en
-producción: confirmar desde el navegador real la consulta a CoinGecko, navegación,
-recarga de rutas, favoritos y persistencia, validación del formulario, consola y
-vista móvil. Registrar resultados una vez comprobados.
+La aplicación se comprobó posteriormente en el dominio público: se mostraron
+las tres cotizaciones y se abrió y recargó correctamente la ruta directa de
+Bitcoin. Permanecen por registrar, de forma independiente, las pruebas de
+persistencia de favoritos tras recarga, validación del formulario, consola y
+vista móvil en producción.
 
 ## Verificación final
 
@@ -92,6 +93,9 @@ vista móvil. Registrar resultados una vez comprobados.
   configuración y documentación, excluyendo dependencias y archivos temporales.
 - Vercel: despliegue de producción confirmado por la interfaz de Vercel;
   URL https://pulso-abierto-omega.vercel.app/ (aportada tras seleccionar Visit).
-  La validación funcional posterior en la URL pública permanece pendiente
-  de registrar.
+  En capturas de producción del 25/11/2026 se verificaron las tres cotizaciones
+  visibles (Bitcoin, Ethereum y Solana) y la recarga directa exitosa de
+  `/criptomonedas/bitcoin` sin retorno inesperado al inicio ni error 404.
+  Aún no se registra como confirmada la persistencia del favorito luego de
+  recargar ni el resto de controles de producción.
 - Fecha de verificación: 25 de noviembre de 2026.
