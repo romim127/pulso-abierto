@@ -71,9 +71,12 @@ las tres cotizaciones y se abrió y recargó correctamente la ruta directa de
 Bitcoin. La persistencia de favoritos después de recargar también fue confirmada
 manualmente por la usuaria en la URL pública. También se verificó mediante
 capturas que el filtro textual `ET` devuelve exclusivamente Ethereum y que
-la interfaz se representa en un viewport de teléfono simulado. Siguen pendientes
-de evidencia específica la validación del formulario con un dato inválido y
-la ausencia de errores bloqueantes en la pestaña Console del navegador.
+la interfaz se representa en un viewport de teléfono simulado. La validación
+se comprobó en producción al introducir `E` (un carácter), que mostró
+«Ingresá al menos 2 caracteres o dejá el campo vacío» y resaltó el campo.
+En otra captura, DevTools en la pestaña **Consola** mostró «No hay problemas»
+durante la consulta filtrada `ET`. Esta observación corresponde a la sesión
+capturada; no demuestra ausencia absoluta de errores en otras condiciones.
 
 ## Verificación final
 
@@ -103,7 +106,8 @@ la ausencia de errores bloqueantes en la pestaña Console del navegador.
   tras recargar la página pública. Las capturas adicionales muestran el filtro
   de búsqueda `ET` con un solo resultado (Ethereum) y una representación móvil
   de la página publicada en una simulación de dispositivo.
-  No se afirmó todavía la ausencia de errores de consola: la captura de DevTools
-  estaba en la pestaña Elementos. Tampoco se documentó una entrada inválida
-  del formulario en producción.
+  Captura adicional: el formulario rechaza `E` con el mensaje de mínimo 2
+  caracteres; la pestaña **Consola** de DevTools muestra «No hay problemas»
+  durante una consulta `ET` con Ethereum como resultado. Evidencia observada
+  en la sesión de producción; sin extrapolar a todas las sesiones.
 - Fecha de verificación: 25 de noviembre de 2026.
