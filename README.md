@@ -56,12 +56,20 @@ la suite para validar el cambio.
 
 ## GitHub y Vercel
 
-No se ha vinculado ni publicado un repositorio remoto. El destino de GitHub y el
-despliegue público quedan pendientes de autorización. No hay una URL pública
-confirmada todavía.
+- **Repositorio fuente:** https://github.com/romim127/pulso-abierto
+- **Rama de producción:** `main`
+- **Commit inicial publicado:** `bfe2cf46110de0fc0ad519b1a73918c77ad7e969`
+- **Aplicación publicada:** https://pulso-abierto-omega.vercel.app/
+- **Plataforma:** Vercel · framework Vite · comando `npm run build` · salida `dist/`.
 
 `vercel.json` define `npm run build`, `dist` como salida y un fallback SPA a
-`index.html` para que las rutas de React Router puedan abrirse y recargarse.
+`index.html` para rutas directas de React Router. El despliegue fue confirmado
+por la pantalla **Deployed to Production** de Vercel (25/11/2026, ART).
+
+La existencia de una URL publicada **no sustituye** las pruebas funcionales en
+producción: confirmar desde el navegador real la consulta a CoinGecko, navegación,
+recarga de rutas, favoritos y persistencia, validación del formulario, consola y
+vista móvil. Registrar resultados una vez comprobados.
 
 ## Verificación final
 
@@ -79,8 +87,11 @@ confirmada todavía.
   reintento exitoso, foco visible y vistas de 1365 × 900 y 390 × 844 sin
   desbordamiento horizontal.
 - Durante la consulta real no se observaron errores de ejecución de página.
-- GitHub: pendiente de vincular con el repositorio destino autorizado; no hay
-  remoto configurado ni se hizo push.
-- Vercel: pendiente de aprobación y despliegue; no se creó un proyecto público
-  ni se inventó una URL.
+- GitHub: publicado en `romim127/pulso-abierto`, rama `main`. Se verificó el
+  push del commit `bfe2cf4` y que se incluyeran los archivos fuente, pruebas,
+  configuración y documentación, excluyendo dependencias y archivos temporales.
+- Vercel: despliegue de producción confirmado por la interfaz de Vercel;
+  URL https://pulso-abierto-omega.vercel.app/ (aportada tras seleccionar Visit).
+  La validación funcional posterior en la URL pública permanece pendiente
+  de registrar.
 - Fecha de verificación: 25 de noviembre de 2026.
