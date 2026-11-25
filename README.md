@@ -68,9 +68,10 @@ por la pantalla **Deployed to Production** de Vercel (25/11/2026, ART).
 
 La aplicación se comprobó posteriormente en el dominio público: se mostraron
 las tres cotizaciones y se abrió y recargó correctamente la ruta directa de
-Bitcoin. Permanecen por registrar, de forma independiente, las pruebas de
-persistencia de favoritos tras recarga, validación del formulario, consola y
-vista móvil en producción.
+Bitcoin. La persistencia de favoritos después de recargar también fue confirmada
+manualmente por la usuaria en la URL pública. Permanecen pendientes de
+registro específico la validación del formulario, la consola y la vista móvil
+en producción.
 
 ## Verificación final
 
@@ -96,6 +97,7 @@ vista móvil en producción.
   En capturas de producción del 25/11/2026 se verificaron las tres cotizaciones
   visibles (Bitcoin, Ethereum y Solana) y la recarga directa exitosa de
   `/criptomonedas/bitcoin` sin retorno inesperado al inicio ni error 404.
-  Aún no se registra como confirmada la persistencia del favorito luego de
-  recargar ni el resto de controles de producción.
+  La usuaria confirmó además que el botón de favorito conserva la selección
+  tras recargar la página pública. La validación del formulario, consola y
+  responsive en producción requieren comprobación independiente.
 - Fecha de verificación: 25 de noviembre de 2026.
