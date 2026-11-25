@@ -69,9 +69,11 @@ por la pantalla **Deployed to Production** de Vercel (25/11/2026, ART).
 La aplicación se comprobó posteriormente en el dominio público: se mostraron
 las tres cotizaciones y se abrió y recargó correctamente la ruta directa de
 Bitcoin. La persistencia de favoritos después de recargar también fue confirmada
-manualmente por la usuaria en la URL pública. Permanecen pendientes de
-registro específico la validación del formulario, la consola y la vista móvil
-en producción.
+manualmente por la usuaria en la URL pública. También se verificó mediante
+capturas que el filtro textual `ET` devuelve exclusivamente Ethereum y que
+la interfaz se representa en un viewport de teléfono simulado. Siguen pendientes
+de evidencia específica la validación del formulario con un dato inválido y
+la ausencia de errores bloqueantes en la pestaña Console del navegador.
 
 ## Verificación final
 
@@ -98,6 +100,10 @@ en producción.
   visibles (Bitcoin, Ethereum y Solana) y la recarga directa exitosa de
   `/criptomonedas/bitcoin` sin retorno inesperado al inicio ni error 404.
   La usuaria confirmó además que el botón de favorito conserva la selección
-  tras recargar la página pública. La validación del formulario, consola y
-  responsive en producción requieren comprobación independiente.
+  tras recargar la página pública. Las capturas adicionales muestran el filtro
+  de búsqueda `ET` con un solo resultado (Ethereum) y una representación móvil
+  de la página publicada en una simulación de dispositivo.
+  No se afirmó todavía la ausencia de errores de consola: la captura de DevTools
+  estaba en la pestaña Elementos. Tampoco se documentó una entrada inválida
+  del formulario en producción.
 - Fecha de verificación: 25 de noviembre de 2026.
